@@ -31,8 +31,8 @@
     "mini-css-extract-plugin": "^2.7.6",
     "react-refresh": "^0.14.0",
     "react-refresh-typescript": "^2.0.9",
-    "sass": "^1.69.0",
-    "sass-loader": "^13.3.2",
+    "sass": "^1.80.3",
+    "sass-loader": "^16.0.2",
     "style-loader": "^3.3.3",
     "ts-loader": "^9.5.0",
     "ts-node": "^10.9.1",
@@ -44,8 +44,11 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^10.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.16.0",
+    "xlsx": "^0.18.5"
   }
 }

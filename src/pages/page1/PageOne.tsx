@@ -1,18 +1,16 @@
-import { Link, Outlet } from 'react-router-dom';
-import { ButtonPrimary } from '~/shared/ui';
+import { useState } from "react";
+
+import styles from "./pageOne.module.scss";
+import { AddFile, useHandleFile } from "~/features/AddFile";
 
 const PageOne = () => {
+  const [data, handleFileUpload] = useHandleFile();
+  console.log(data);
+  return (
+    <div>
+      <AddFile handleFileUpload={handleFileUpload} />
+    </div>
+  );
+};
 
-    return (
-        <div>
-            <div>
-                <Link to={'/two'}>Page 2</Link>
-                <Link to={'/'}>Main page</Link>
-            </div>
-            <ButtonPrimary>Custom Button</ButtonPrimary>
-            <Outlet />
-        </div>
-    );
-}
-
-export default PageOne
+export default PageOne;
