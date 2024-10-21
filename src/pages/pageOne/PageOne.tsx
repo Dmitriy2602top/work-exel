@@ -2,13 +2,14 @@ import { useState } from "react";
 
 import styles from "./pageOne.module.scss";
 import { AddFile, useHandleFile } from "~/features/AddFile";
+import { FormSalary } from "~/widgets/FormSalary";
+import { TableSalary } from "~/widgets/TableSalary";
 
 const PageOne = () => {
-  const [data, handleFileUpload] = useHandleFile();
-  console.log(data);
   return (
     <div>
-      <AddFile handleFileUpload={handleFileUpload} />
+      <FormSalary />
+      <TableSalary />
     </div>
   );
 };

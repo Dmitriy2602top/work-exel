@@ -1,1 +1,1 @@
-export { PageOneLazy as PageOne } from "./page1/PageOne.lazy";
+export { PageOneLazy as PageOne } from "./pageOne/PageOne.lazy";

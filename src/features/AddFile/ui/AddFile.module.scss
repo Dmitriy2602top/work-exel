@@ -1,0 +1,27 @@
+.fileUpload {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem;
+
+  &Label {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 2px dashed #4a90e2;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f0f8ff;
+    }
+  }
+
+  &Input {
+    display: none; // Скрываем стандартный инпут
+  }
+
+  &Text {
+    color: #4a90e2;
+    font-weight: bold;
+  }
+}
